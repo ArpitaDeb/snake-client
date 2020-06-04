@@ -1,5 +1,4 @@
 const net = require('net');
-
 /**
  * Establishes connection with the game server
  */
@@ -14,6 +13,7 @@ const connect = function() {
   
   conn.on('connect', () => {
     conn.write('Name: SNK');
+    conn.write('Say: I dislike you');
     //setInterval(()=>conn.write('Move: up'), 50);
   });
  
